@@ -10,11 +10,6 @@ const MobileHeader = ({ toggle, close }) => {
       id="mobile-nav"
       style={{ display: "block" }}
     >
-      <Link legacyBehavior href="/">
-        <a>
-          <img alt="logo" src="assets/img/logo.svg" />
-        </a>
-      </Link>
       <div className="res-log">
         <a href="index.html">
           <img

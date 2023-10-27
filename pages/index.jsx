@@ -8,6 +8,14 @@ const Index3 = () => {
       <section className="  services-two no-bottom">
         <div className="container">
           <div className="row">
+            <a href="index.html">
+              <img
+                src="assets/img/logo-full.svg"
+                style={{ width: "150px", padding: "16px 0px" }}
+                alt="Responsive Logo"
+              />
+            </a>
+            <br></br>
             <div className="col-xl-5">
               <div className="heading">
                 <h6>Different. Relevant. Focused.</h6>

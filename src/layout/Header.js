@@ -22,7 +22,7 @@ const Header = ({ headerExtraClass, noHeaderBg, blackLogo }) => {
                   {blackLogo ? (
                     <img alt="logo" src="assets/img/logo-full.svg" />
                   ) : (
-                    <img alt="logo" src="assets/img/logo.svg" />
+                    <img alt="logo" src="assets/img/logo-full.svg" />
                   )}
                 </a>
               </Link>
@@ -39,102 +39,11 @@ const Header = ({ headerExtraClass, noHeaderBg, blackLogo }) => {
                         src="assets/img/logo-full.svg"
                       />
                     ) : (
-                      <img alt="logo" src="assets/img/logo.svg" />
+                      <img alt="logo" src="assets/img/logo-full.svg" />
                     )}
                   </a>
                 </Link>
               </li>
-              {/* <li>
-                <Link legacyBehavior href="about">
-                  Pages
-                </Link>
-                <ul className="sub-menu">
-                  <li>
-                    <Link legacyBehavior href="about">
-                      about
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="team">
-                      team
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="services">
-                      services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="pricing">
-                      pricing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="404error">
-                      404 error
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <Link legacyBehavior href="portfolio-grid">
-                  Portfolio
-                </Link>
-                <ul className="sub-menu">
-                  <li>
-                    <Link legacyBehavior href="portfolio-grid">
-                      portfolio grid
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="portfolio-masonry">
-                      portfolio masonry
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="portfolio-metro">
-                      portfolio metro
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="portfolio-single-v1">
-                      portfolio single v1
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="portfolio-single-v2">
-                      portfolio single v2
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <Link legacyBehavior href="blog-grid">
-                  Blog
-                </Link>
-                <ul className="sub-menu">
-                  <li>
-                    <Link legacyBehavior href="blog-grid">
-                      blog grid
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="blog-single-post">
-                      blog single post 1
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="blog-single-post-2">
-                      blog single post 2
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <Link legacyBehavior href="contacts">
-                  contacts
-                </Link>
-              </li> */}
             </ul>
           </div>
           <div>

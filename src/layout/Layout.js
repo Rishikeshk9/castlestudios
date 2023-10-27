@@ -19,11 +19,7 @@ const Layout = ({
       </Head>
       <VideoPopup />
       <ImageView />
-      <Header
-        headerExtraClass={headerExtraClass}
-        noHeaderBg={noHeaderBg}
-        blackLogo={blackLogo}
-      />
+
       {children}
       <Footer />
       <ScrollTop />
