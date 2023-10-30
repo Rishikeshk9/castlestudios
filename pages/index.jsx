@@ -2,6 +2,27 @@ import TerioCounter from "@/src/components/TerioCounter";
 import Layout from "@/src/layout/Layout";
 import { herothreeswiper, studiesswiper } from "@/src/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useEffect } from "react";
+
+// Function to handle the button click and trigger the conversion event
+function handleConversion(url) {
+  const gtag_report_conversion = () => {
+    const callback = () => {
+      if (typeof url !== "undefined") {
+        window.location = url;
+      }
+    };
+
+    // Replace 'AW-11391635567/Ma_3CLHMnvIYEO-g-rcq' with your actual Google Analytics ID and conversion ID
+    window.gtag("event", "conversion", {
+      send_to: "AW-11391635567/Ma_3CLHMnvIYEO-g-rcq",
+      event_callback: callback,
+    });
+  };
+
+  gtag_report_conversion();
+}
+
 const Index3 = () => {
   return (
     <Layout noHeaderBg headerExtraClass={"two"} blackLogo pageName={"Home"}>
@@ -704,9 +725,11 @@ const Index3 = () => {
                   achieve greatness together.
                 </p>
               </div>
-              <a
-                class="whatsapp-button  flex flex-col  w-full mx-auto mt-2"
-                href="https://wa.me/919869868616?text=Hello."
+              <div
+                onClick={() =>
+                  handleConversion("https://wa.me/919869868616?text=Hello.")
+                }
+                class="whatsapp-button  flex flex-col  w-full mx-auto mt-2 cursor-pointer"
                 target="_blank"
               >
                 <svg
@@ -722,16 +745,22 @@ const Index3 = () => {
                   <strong className="text-white ">WhatsApp</strong>
                   <span className="text-white">+91 986 986 8616</span>
                 </p>
-              </a>
+              </div>
 
               {/* 
               <! -- Instagram --> */}
               <div class="BOX">
-                <a target="_blank" href="https://ig.me/m/castlewebstudios">
+                <div
+                  onClick={() =>
+                    handleConversion("https://ig.me/m/castlewebstudios")
+                  }
+                  target="_blank"
+                  className="cursor-pointer"
+                >
                   <button class="LongInstagram px-2">
                     <i class="fab fa-instagram"></i> Message on Instagram
                   </button>
-                </a>
+                </div>
               </div>
             </div>
           </div>
